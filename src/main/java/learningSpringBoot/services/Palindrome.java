@@ -1,8 +1,21 @@
-package learningSpringBoot.controllers;
+package learningSpringBoot.services;
 
+
+import org.springframework.stereotype.Service;
 import java.text.Normalizer;
 
+/**
+ * Controller to verify Palindromes.
+ */
+
+@Service
 public class Palindrome {
+
+    /**
+     *
+     * @param word input variable.
+     * @return a String if it is Palindrome or Not.
+     */
 
     public static String isPalindrome(String word) {
         if (word == null || word.isEmpty()) {
