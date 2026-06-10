@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldRestController {
 
-    @GetMapping ({"/hello", "/hola", "/saludo"})
+    @GetMapping ({"/hello", "/plaindrome"})
     public String helloWorld() {
         System.out.println("Request succesfully Listened from port 8080 :) !");
         return "Hello World";
     }
+
 }
